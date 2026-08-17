@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharat Kirana Store | Your Everyday Needs</title>
+<meta name="description" content="Bharat Kirana Store - groceries, household essentials, snacks, beverages and everyday products.">
+<style>
+:root{--green:#15803d;--dark:#14532d;--light:#f0fdf4;--yellow:#facc15;--text:#17211b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#f8faf9;line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:white;box-shadow:0 2px 12px #0001}
+.nav{max-width:1150px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;gap:10px;align-items:center;font-weight:800;color:var(--dark);font-size:1.25rem}
+.logo span{background:var(--green);color:white;border-radius:12px;padding:8px 10px}
+nav a{margin-left:20px;text-decoration:none;color:#334155;font-weight:600}
+nav a:hover{color:var(--green)}
+.hero{background:linear-gradient(135deg,#dcfce7,#fff7c2);padding:75px 20px}
+.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:white;border:1px solid #bbf7d0;color:var(--green);padding:7px 12px;border-radius:999px;font-weight:700;margin-bottom:14px}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.02;color:var(--dark);margin-bottom:18px}
+.hero p{font-size:1.1rem;max-width:620px;color:#475569}
+.buttons{margin-top:25px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:800}
+.primary{background:var(--green);color:white}
+.secondary{background:white;color:var(--dark);border:2px solid #bbf7d0}
+.shop-card{background:white;border-radius:28px;padding:30px;box-shadow:0 18px 45px #14532d22;text-align:center}
+.basket{font-size:6rem}
+.shop-card h2{color:var(--dark);margin:8px}
+section{padding:65px 20px}
+.container{max-width:1150px;margin:auto}
+.section-title{text-align:center;color:var(--dark);font-size:2rem;margin-bottom:10px}
+.section-sub{text-align:center;color:#64748b;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:white;border-radius:18px;padding:24px;text-align:center;box-shadow:0 5px 20px #0000000b;border:1px solid #e2e8f0}
+.card .icon{font-size:2.6rem;margin-bottom:10px}
+.card h3{color:var(--dark);margin-bottom:6px}
+.products{background:var(--light)}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{background:white;border-radius:18px;padding:20px;border:1px solid #dcfce7}
+.product .pic{height:125px;border-radius:14px;background:linear-gradient(135deg,#ecfdf5,#fefce8);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:14px}
+.product h3{color:#1f2937}
+.price{color:var(--green);font-weight:800;margin-top:5px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.about-box{background:var(--dark);color:white;border-radius:25px;padding:35px}
+.about-box h2{font-size:2rem;margin-bottom:12px}
+.features{list-style:none;margin-top:18px}
+.features li{margin:10px 0}
+.contact{background:#ecfdf5}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:white;border-radius:20px;padding:28px}
+.contact-card h3{color:var(--dark);margin-bottom:12px}
+footer{background:#052e16;color:#d1fae5;text-align:center;padding:25px}
+.small{font-size:.9rem;color:#64748b}
+@media(max-width:800px){
+ nav a{display:none}.hero-inner,.about,.contact-grid{grid-template-columns:1fr}
+ .grid,.product-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){.grid,.product-grid{grid-template-columns:1fr}section{padding:45px 16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo"><span>🛒</span> Bharat Kirana Store</div>
+    <nav><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div>
+   <div class="badge">🟢 Your Local Everyday Store</div>
+   <h1>Fresh. Easy. Affordable.</h1>
+   <p>Welcome to <b>Bharat Kirana Store</b> — your friendly neighborhood destination for groceries, snacks, beverages and daily household essentials.</p>
+   <div class="buttons">
+    <a class="btn primary" href="#products">Explore Products</a>
+    <a class="btn secondary" href="#contact">Contact Store</a>
+   </div>
+  </div>
+  <div class="shop-card">
+   <div class="basket">🛒</div>
+   <h2>Everything You Need</h2>
+   <p>Daily essentials • Snacks • Drinks • Household items</p>
+  </div>
+ </div>
+</section>
+
+<section id="categories">
+ <div class="container">
+  <h2 class="section-title">Shop by Category</h2>
+  <p class="section-sub">Find your everyday essentials in one place.</p>
+  <div class="grid">
+   <div class="card"><div class="icon">🌾</div><h3>Groceries</h3><p>Rice, flour, pulses, spices & more.</p></div>
+   <div class="card"><div class="icon">🥤</div><h3>Beverages</h3><p>Drinks, juices, tea & coffee.</p></div>
+   <div class="card"><div class="icon">🍪</div><h3>Snacks</h3><p>Biscuits, namkeen, chocolates & treats.</p></div>
+   <div class="card"><div class="icon">🧹</div><h3>Household</h3><p>Cleaning and everyday home essentials.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="products" id="products">
+ <div class="container">
+  <h2 class="section-title">Popular Products</h2>
+  <p class="section-sub">Browse our grocery and everyday essentials. Contact us for current availability and prices.</p>
+  <div class="product-grid">
+<div class="product"><div class="pic">🍚</div><h3>Rice</h3><p>Basmati, regular & varieties</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🌾</div><h3>Wheat Flour (Atta)</h3><p>Daily-use flour</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🫘</div><h3>Pulses & Dal</h3><p>Toor, moong, masoor, chana</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧂</div><h3>Salt</h3><p>Iodized & regular salt</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🍬</div><h3>Sugar</h3><p>Daily-use sugar</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🫗</div><h3>Cooking Oil</h3><p>Sunflower, groundnut & more</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🌶️</div><h3>Spices</h3><p>Chilli, turmeric, cumin & masalas</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🍵</div><h3>Tea & Coffee</h3><p>Tea, coffee & premixes</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🥛</div><h3>Milk & Dairy</h3><p>Milk, curd, butter & dairy items</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🍪</div><h3>Biscuits</h3><p>Popular biscuits & cookies</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🥨</div><h3>Namkeen</h3><p>Sev, bhujia & snacks</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🍫</div><h3>Chocolates</h3><p>Chocolates & confectionery</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🥤</div><h3>Cold Drinks</h3><p>Soft drinks & beverages</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧃</div><h3>Juices</h3><p>Juices & fruit drinks</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">💧</div><h3>Packaged Water</h3><p>Bottled drinking water</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🍜</div><h3>Instant Foods</h3><p>Noodles, pasta & ready mixes</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🥫</div><h3>Packaged Foods</h3><p>Sauces, spreads & canned foods</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🌰</div><h3>Dry Fruits & Nuts</h3><p>Almonds, cashews & more</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧼</div><h3>Soaps</h3><p>Bath & hand soaps</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧴</div><h3>Shampoo & Hair Care</h3><p>Shampoo, oil & hair products</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🪥</div><h3>Oral Care</h3><p>Toothpaste & toothbrushes</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧹</div><h3>Cleaning Supplies</h3><p>Floor, dish & surface cleaners</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧺</div><h3>Laundry</h3><p>Detergent powder, liquid & bars</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🧻</div><h3>Paper Products</h3><p>Tissues, napkins & paper essentials</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🦟</div><h3>Mosquito Care</h3><p>Repellents & related essentials</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🕯️</div><h3>Home Essentials</h3><p>Candles, matches & daily-use items</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">👶</div><h3>Baby Care</h3><p>Baby hygiene & daily essentials</p><p class="price">Ask in store</p></div>
+<div class="product"><div class="pic">🐕</div><h3>Pet Supplies</h3><p>Common pet food & essentials</p><p class="price">Ask in store</p></div>
+</div>
+ </div>
+</section>
+
+<section>
+ <div class="container about">
+  <div>
+   <h2 class="section-title" style="text-align:left">About Bharat Kirana Store</h2>
+   <p>We aim to make everyday shopping simple and convenient for our local customers, with a useful range of household and grocery products.</p>
+   <ul class="features">
+    <li>✅ Everyday essentials in one place</li>
+    <li>✅ Friendly local service</li>
+    <li>✅ Convenient shopping</li>
+    <li>✅ Great value on daily needs</li>
+   </ul>
+  </div>
+  <div class="about-box">
+   <h2>Need something?</h2>
+   <p>Call or message the store to ask about product availability, prices or delivery options.</p>
+   <div class="buttons"><a class="btn secondary" href="#contact">Get in Touch</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="container">
+  <h2 class="section-title">Visit or Contact Us</h2>
+  <p class="section-sub">Contact Bharat Kirana Store for enquiries, availability and current prices.</p>
+  <div class="contact-grid">
+   <div class="contact-card"><h3>📍 Store Address</h3><p>BHARAT KIRANA STORE<br>EK BATI BAZZAR, TOWER ROAD<br>DEVGHADH BARIA 389380</p></div>
+   <div class="contact-card"><h3>📧 Contact Email</h3><p><a href="mailto:aranapurwala@gmail.com">aranapurwala@gmail.com</a></p><p class="small">Email us for enquiries and product information.</p></div>
+   <div class="contact-card"><h3>🕒 Opening Hours</h3><p>Monday – Sunday<br>7:30 AM – 8:00 PM</p><p class="small">Open every day.</p></div>
+   <div class="contact-card"><h3>💬 Send an Email</h3><p><a class="btn primary" href="mailto:aranapurwala@gmail.com">Email Us</a></p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <p>© 2026 Bharat Kirana Store. All rights reserved.</p>
+ <p class="small">Made for your local neighborhood store.</p>
+</footer>
+</body>
+</html>
